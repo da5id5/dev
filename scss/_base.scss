@@ -1,0 +1,96 @@
+
+/* global styles */
+
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+}
+
+.clearfix {
+	display: table;
+	content: " ";
+	clear: both;
+}
+
+.hide {
+	display: none;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	color: $font-color;
+}
+
+/* page styles */
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.home {
+// 	@include backImage('http://placehold.it/960x600') ;
+	background: $bg-color;
+	font-family: $font-copy;
+	color: $font-color;
+	font-size: $font-size;
+}
+
+h1, 
+h2,
+h3,
+{ 
+	font-weight: $font-bold;
+}
+
+h1, 
+h2,
+p,
+ul,
+section {
+	margin-bottom: 15px;
+}
+
+nav {
+	ul {
+		li {
+			display: inline-block;
+			padding-right: 20px;
+			a{
+				text-decoration: none;
+				padding: 6px;
+			}//a
+			a:link,
+			a:visited {
+				color: $font-color;
+			}
+			a:hover,
+			a:active {
+				color: rgba(255,255,255,.6);
+				background: $font-color
+			}			
+		}//li
+	}//ul
+}//nav
+
+
+
+
+
+
