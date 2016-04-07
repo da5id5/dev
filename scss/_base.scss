@@ -40,8 +40,7 @@ a:active {
 /* page styles */
 
 .container {
-	width: 960px;
-	margin: 0 auto;
+	@include container(960px);
 }
 
 .home {
@@ -67,6 +66,11 @@ section {
 	margin-bottom: 15px;
 }
 
+section {
+	@include box();
+	@include span(3);
+}
+
 nav {
 	ul {
 		li {
@@ -89,6 +93,19 @@ nav {
 	}//ul
 }//nav
 
+// medium style
+@include susy-breakpoint($medium) {
+	section {
+		@include span(6);
+	}
+}//end medium style
+
+// small style
+@include susy-breakpoint($small) {
+	section {
+		@include span(12);
+	}
+}//end medium style
 
 
 

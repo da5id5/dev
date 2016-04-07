@@ -6,6 +6,12 @@
 	height: $height;
 }
 
+@mixin box() {
+	background: $transwhite;
+	border: $bstyle $bthick $transblack;
+	padding: 1%;
+}
+
 // @mixin border-radius($border-radius) {
 // 	-webkit-border-radius: $border-radius;
 // 	border-radius: $border-radius;
