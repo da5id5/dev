@@ -30,6 +30,16 @@ ul li {
 	float: right;
 }
 
+summary {
+    outline: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+    cursor: -webkit-grab;
+}
+
+
+
+
 a:link,
 a:visited,
 a:hover,
@@ -40,7 +50,7 @@ a:active {
 /* page styles */
 
 .container {
-	@include container(960px);
+	@include container(800px);
 }
 
 .home {
@@ -49,6 +59,7 @@ a:active {
 	font-family: $font-copy;
 	color: $font-color;
 	font-size: $font-size;
+	line-height: $font-leading;
 }
 
 h1, 
@@ -58,7 +69,7 @@ h3,
 	font-weight: $font-bold;
 }
 
-h1, 
+// h1, 
 h2,
 p,
 ul,
@@ -68,26 +79,49 @@ section {
 
 section {
 	@include box();
-	@include span(3);
+	@include span(12);
+	padding: 10px 30px;
+	padding-top: 65px;
 }
 
-nav {
+.top {
+	background: $bg-color;
+    position: fixed;
+    width: 100%;
+}
+
+header {
+	float: left;
+	width: 290px;
+	h1 {
+		color: rgba(255, 133, 98, 0.95);
+		font-size: 3em;
+		
+	}//h1
+}//header
+
+nav { 
+	float: right;
+	width: 386px;
+	margin-top: 20px;
 	ul {
 		li {
 			display: inline-block;
 			padding-right: 20px;
 			a{
 				text-decoration: none;
-				padding: 6px;
+				padding: 8px;
+				transition: all 250ms cubic-bezier(.17,.67,0,0);
 			}//a
 			a:link,
 			a:visited {
-				color: $font-color;
+				color: rgba(255,255,255,.8);
 			}
 			a:hover,
 			a:active {
-				color: rgba(255,255,255,.6);
-				background: $font-color
+				color: rgba(255,255,255,.9);
+				background: #ff8562;
+				border-radius: 15px;
 			}			
 		}//li
 	}//ul
@@ -96,7 +130,12 @@ nav {
 // medium style
 @include susy-breakpoint($medium) {
 	section {
-		@include span(6);
+		@include span(12);
+		padding-top: 100px
+	}
+	
+		nav {
+		margin-top: 0;
 	}
 }//end medium style
 
@@ -104,6 +143,11 @@ nav {
 @include susy-breakpoint($small) {
 	section {
 		@include span(12);
+		padding-top: 100px;
+	}
+	
+	nav {
+		margin-top: 0;
 	}
 }//end medium style
 

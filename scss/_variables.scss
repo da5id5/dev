@@ -2,17 +2,18 @@
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 
 $font-stack: helvetica, sans-serif;
-$font-size: 13px;
+$font-size: 14px;
 $font-copy: 'Roboto', sans-serif;
 $font-bold: 700;
+$font-leading: 1.55;
 
-$bg-color: rgba(140, 151, 160, 0.42);
+$bg-color: rgba(0, 0, 0, 0.85);
 $font-color: #292927;
 $mark-color: #63FF14;
 
 
-$transwhite: rgba(255,255,255,0.7);
+$transwhite: rgba(255,255,255,0.85);
 $transblack: rgba(0,0,0,0.4);
-$bthick: 1px;
+$bthick: 2px;
 $bstyle: solid;
 
