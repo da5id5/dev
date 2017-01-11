@@ -163,7 +163,7 @@ section {
 
 header {
   float: left;
-  width: 290px;
+  width: 351px;
 }
 header h1 {
   color: rgba(255, 133, 98, 0.95);
@@ -195,7 +195,7 @@ nav ul li a:active {
   border-radius: 15px;
 }
 
-@media (min-width: 481px) and (max-width: 675px) {
+@media (min-width: 481px) and (max-width: 736px) {
   section {
     width: 100%;
     float: left;
